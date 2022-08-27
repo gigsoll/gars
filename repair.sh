@@ -31,6 +31,12 @@ sudo pacman -S sddm wget
 sudo systemctl enable sddm
 sudo systemctl enable bluetooth
 
+mkdir Additional
+cd Additional
+git clone https://github.com/gigsoll/i3-setup.git
+cd i3-setup
+./install.sh
+
 
 
 

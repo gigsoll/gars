@@ -41,8 +41,9 @@ cd ..
 git clone https://github.com/nautilor/nord-sddm.git
 sudo cp -R Nord /usr/share/sddm/themes/
 cd ..
+cd ..
 
-sudo cp ../assets/sddm.conf /etc/sddm.conf
+sudo cp ./assets/sddm.conf /etc/sddm.conf
 sudo cp $HOME/.config/wallpapers/nord_lake.png /usr/share/sddm/themes/Nord/assets/bg.jpg
 
 # Install packages

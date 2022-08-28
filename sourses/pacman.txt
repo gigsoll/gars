@@ -1,0 +1,1 @@
+alsa-lib alsa-utils gsound libcanberra libpulse pulseaudio sof-firmmware libreoffice-fresh libreoffice-fresh-uk sddm telegram-desktop steam ttf-tw plasma-framework krita kdenlive eog mtpfs gvfs-mtp gvfs-gphoto2 discord obs-studio gnome-boxes 

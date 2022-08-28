@@ -28,29 +28,25 @@ tput setaf 7
 sudo pacman -Syu
 sudo pacman -S sddm wget
 
+# Install packages
+pacman=$(cat ./sourses/pacman.txt)
+sudo pacman -Syu $pacman
+aur=$(cat ./sourses/pacman.txt)
+yay -S $aur
+
 # Git clone process
 mkdir Additional
 cd Additional
 git clone https://github.com/gigsoll/i3-setup.git
 cd i3-setup
 ./install.sh
-cd ..
 rm -rf i3-setup
-cd ..
 
 git clone https://github.com/nautilor/nord-sddm.git
 sudo cp -R Nord /usr/share/sddm/themes/
-cd ..
-cd ..
 
 sudo cp ./assets/sddm.conf /etc/sddm.conf
 sudo cp $HOME/.config/wallpapers/nord_lake.png /usr/share/sddm/themes/Nord/assets/bg.jpg
-
-# Install packages
-pacman=$(cat ./sourses/pacman.txt)
-sudo pacman -Syu $pacman
-aur=$(cat ./sourses/pacman.txt)
-yay -S $aur
 
 # Power minimizer
 sudo envycontrol -s integrated

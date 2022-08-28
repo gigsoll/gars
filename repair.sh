@@ -43,6 +43,7 @@ cd i3-setup
 rm -rf i3-setup
 
 git clone https://github.com/nautilor/nord-sddm.git
+cd nord-sddm
 sudo cp -R Nord /usr/share/sddm/themes/
 
 sudo cp ./assets/sddm.conf /etc/sddm.conf

@@ -25,7 +25,7 @@ echo "1"
 sleep 1
 echo "lets go!!!"
 tput setaf 7
-
+sudo pacman -Syu
 sudo pacman -S sddm wget
 
 # Git clone process
